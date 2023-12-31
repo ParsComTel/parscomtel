@@ -1,0 +1,56 @@
+---
+import AppFooter from "../components/AppFooter.astro";
+import AppHeader from "../components/AppHeaderFa.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="description" content="Pars Comtel mobile company" />
+        <title>ParsComtel</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    </head>
+    <body class="bg-white dark:bg-gray-900 font-['lalezar']">
+        <AppHeader />
+        <slot />
+        <AppFooter />
+        <div class="fixed inset-x-6 bottom-6 z-40 mx-auto w-max">
+            <a href="" target="_blank">
+                <button
+                        class="overflow-hidden shadow-2xl shadow-yellow-900/50 backdrop-blur-xl dark:border-white/10 dark:from-gray-800 dark:to-black/70 dark:shadow-primary/50 relative w-32 p-2 h-12 bg-indigo-800 text-white border-none rounded-2xl text-xl font-bold cursor-pointer relative z-10 group"
+                >
+                     ! حِـرمِـسـ
+                    <span
+                            class="absolute w-36 h-32 -top-8 -left-2 bg-green-200 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-bottom"
+                    ></span>
+                    <span
+                            class="absolute w-36 h-32 -top-8 -left-2 bg-green-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-bottom"
+                    ></span>
+                    <span
+                            class="absolute w-36 h-32 -top-8 -left-2 bg-green-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-bottom"
+                    ></span>
+                    <span
+                            class="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10"
+                    >بِبیـن مَنـو</span
+                    >
+                </button>
+
+            </a>
+        </div>
+    </body>
+</html>
+<style>
+    html {
+        font-family: Urbanist, sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+    }
+</style>
