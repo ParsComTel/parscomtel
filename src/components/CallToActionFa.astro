@@ -11,46 +11,80 @@ import Container from "./Container.astro"
   <Container>
     <div class="relative">
       <div class="flex items-center justify-center -space-x-2">
-        <svg class="h-8 w-8 rounded-full object-cover bg-blue-100"
-            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="400" height="400" fill="none"><style>@keyframes airpod{0%{transform:scale(.2);opacity:.8}80%{transform:scale(1.2);opacity:0}to{transform:scale(2.2);opacity:0}}</style><rect width="14" height="14" x="5" y="5" fill="#265BFF" rx="7" style="animation:airpod 1.5s cubic-bezier(.165,.84,.44,1) infinite both;transform-origin:center center"/><path fill="#0A0A30" d="M9.392 7.004a2.104 2.104 0 00-1.52.58l-.544.543a.677.677 0 00-.181.507v.869a.797.797 0 00.036.29c.034.103.082.2.145.29a.65.65 0 00.181.253 2.507 2.507 0 001.883.87 2.212 2.212 0 002.282-2.102 2.213 2.213 0 00-2.282-2.1zM8.125 9.72a.17.17 0 01-.181.181H7.87a.17.17 0 01-.18-.18V8.488a.17.17 0 01.18-.181h.073a.17.17 0 01.18.18V9.72zm2.064-.29h-.616a.333.333 0 01-.326-.362.326.326 0 01.326-.326h.652a.333.333 0 01.326.362.362.362 0 01-.362.326zm-.724 6.994a.525.525 0 00.507.54h.616a.53.53 0 00.507-.544v-5.25a3.238 3.238 0 01-1.63.543v4.712zm7.207-8.297l-.543-.544a1.967 1.967 0 00-1.521-.58 2.213 2.213 0 00-2.282 2.101 2.213 2.213 0 002.282 2.101 2.388 2.388 0 001.883-.87c.072-.072.109-.18.181-.253a.724.724 0 00.145-.29.797.797 0 00.036-.29v-.868a.676.676 0 00-.181-.507zM14.427 9.43h-.652a.362.362 0 010-.724h.652a.333.333 0 01.325.362.3.3 0 01-.325.362zm1.883.29a.17.17 0 01-.11.17.17.17 0 01-.071.011h-.073a.17.17 0 01-.18-.18V8.488a.17.17 0 01.11-.17.17.17 0 01.07-.011h.073a.17.17 0 01.18.18V9.72zm-3.405 6.737a.532.532 0 00.544.543h.543a.532.532 0 00.543-.543v-4.745a2.673 2.673 0 01-1.63-.543v5.288z"/></svg>
+        <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
+          <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">جایی که نوآوری با تجربه خرید بی‌درنگ همراه است</h1>
+          <br/>
+          <div class="flex flex-wrap justify-center gap-6">
+          </div>
+          <div class="relative h-full w-full flex items-center justify-center">
+            <div class="profileCard_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
+              <button class="profile_item left-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
+      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2]  p-1">
+        <svg viewBox="0 0 128 128">
+          <g fill="#61DAFB"><circle r="11.4" cy="64" cx="64"></circle><path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"></path></g>
+        </svg>
+      </span>
+              </button>
 
-        <svg class="h-12 w-12 rounded-full object-cover bg-blue-100"
-            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="none"><style>@keyframes smartwatch{to{stroke-dashoffset:0}}</style><path fill="#0A0A30" fill-rule="evenodd" d="M8.867 5.86a3.04 3.04 0 00-3.04 3.04v6.084a3.04 3.04 0 003.04 3.04h6.084a3.04 3.04 0 003.04-3.04v-2.76a.438.438 0 00.688-.36v-2.12a.438.438 0 00-.688-.36V8.9a3.04 3.04 0 00-3.04-3.04H8.867zM7.327 8.9c0-.85.69-1.54 1.54-1.54h6.084c.85 0 1.54.69 1.54 1.54v6.084c0 .85-.69 1.54-1.54 1.54H8.867c-.85 0-1.54-.69-1.54-1.54V8.9z" clip-rule="evenodd"/><path stroke="#265BFF" stroke-linecap="round" stroke-linejoin="round" stroke-width=".8" d="M9 11.768h1.654l.654-1.322 1.23 3 .423-1.678H15" style="animation:smartwatch 2s infinite cubic-bezier(.99,-.1,.01,1.02)" stroke-dashoffset="100" stroke-dasharray="100"/><path stroke="#0A0A30" stroke-linecap="round" stroke-width="1.5" d="M10 4.202h4m-3.747 15.479h4"/></svg>
+              <button class="profile_item right-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
+      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2]  p-1">
+        <svg viewBox="0 0 48 48" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z" fill="#00acc1"></path>
+        </svg>
+      </span>
+              </button>
 
-        <svg class="z-10 h-16 w-16 rounded-full object-cover bg-blue-100"
-            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="none"><style>@keyframes mobile-vibration{0%,to{transform:translateX(0)}10%,30%,50%,70%{transform:translateX(-1px)}20%,40%,60%,80%{transform:translateX(2px)}90%{transform:translateX(-2px)}}</style><g style="animation:mobile-vibration 1.5s linear infinite both"><path fill="#0A0A30" fill-rule="evenodd" d="M11.55 4.097c-1.275-.341-2.6.469-2.96 1.81L5.75 16.505c-.359 1.341.384 2.705 1.66 3.047l5.04 1.35c1.275.342 2.6-.468 2.96-1.81l2.84-10.597c.359-1.341-.384-2.705-1.66-3.047l-5.04-1.35zm-1.7 2.148c.164-.61.766-.978 1.346-.823l.31.083c-.03.07-.055.142-.075.217-.216.804.23 1.623.995 1.828l1.68.45c.765.205 1.56-.28 1.776-1.086.02-.075.035-.15.044-.225l.31.083c.58.156.917.776.753 1.386l-2.84 10.597c-.162.61-.765.978-1.345.823l-5.04-1.35c-.58-.156-.917-.776-.754-1.386L9.85 6.245zm2.82-.428l2.091.56c.04.071.053.158.03.245a.313.313 0 01-.377.23l-1.68-.45a.312.312 0 01-.211-.388.328.328 0 01.147-.197z" clip-rule="evenodd"/><path stroke="#265BFF" stroke-linecap="round" stroke-width="1.5" d="M6.312 8.905L5.277 12.77m13.446-.539l-1.035 3.864"/></g></svg>
+              <button class="profile_item -left-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
+      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] p-1">
+        <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0" fill="#0acf83"></path><path d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0" fill="#a259ff"></path><path d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0" fill="#f24e1e"></path><path d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0" fill="#ff7262"></path><path d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0" fill="#1abcfe"></path></svg>
+      </span>
+              </button>
 
-        <svg class="relative h-12 w-12 rounded-full object-cover bg-blue-100"
-            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="none"><style>@keyframes airplay{0%{transform:translateY(1px)}to{transform:translateY(-1px)}}</style><path fill="#0A0A30" d="M8.165 16.75a.75.75 0 000-1.5v1.5zm7.603-1.5a.75.75 0 000 1.5v-1.5zM8 6.75h8v-1.5H8v1.5zM18.25 9v4h1.5V9h-1.5zm-12.5 4V9h-1.5v4h1.5zm2.415 2.25H8v1.5h.165v-1.5zm7.835 0h-.232v1.5H16v-1.5zM4.25 13A3.75 3.75 0 008 16.75v-1.5A2.25 2.25 0 015.75 13h-1.5zm14 0A2.25 2.25 0 0116 15.25v1.5A3.75 3.75 0 0019.75 13h-1.5zM16 6.75A2.25 2.25 0 0118.25 9h1.5A3.75 3.75 0 0016 5.25v1.5zm-8-1.5A3.75 3.75 0 004.25 9h1.5A2.25 2.25 0 018 6.75v-1.5z"/><path fill="#265BFF" fill-rule="evenodd" d="M10.412 14.86c.706-1.112 2.47-1.112 3.176 0l1.058 1.666c.706 1.111-.176 2.5-1.588 2.5h-2.117c-1.41 0-2.293-1.389-1.587-2.5l1.058-1.667zm2.117.555c-.235-.37-.823-.37-1.058 0l-1.059 1.667c-.235.37.06.833.53.833h2.117c.47 0 .764-.463.529-.833l-1.059-1.667z" clip-rule="evenodd" style="animation:airplay .8s ease-in infinite alternate both"/></svg>
+              <button class="profile_item -right-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
+      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] p-1">
+        <svg class="m-auto h-full w-full justify-center items-center inline-block"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="90px" height="90px"><g fill="#313131" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M26.37,26l-8.795,-12.822l0.015,0.012l7.93,-9.19h-2.65l-6.46,7.48l-5.13,-7.48h-6.95l8.211,11.971l-0.001,-0.001l-8.66,10.03h2.65l7.182,-8.322l5.708,8.322zM10.23,6l12.34,18h-2.1l-12.35,-18z"/></g></g></svg>
+      </span>
+              </button>
 
-        <svg  class="h-8 w-8 rounded-full object-cover bg-blue-100"
-            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="none"><style>@keyframes speaker-beat{10%{transform:scale(.91);animation-timing-function:ease-in}17%{transform:scale(.98);animation-timing-function:ease-out}33%{transform:scale(.87);animation-timing-function:ease-in}45%{transform:scale(1);animation-timing-function:ease-out}}</style><rect width="12" height="16" x="6" y="4" stroke="#0A0A30" stroke-width="1.5" rx="4"/><circle cx="12" cy="8" r="1" fill="#0A0A30"/><circle cx="12" cy="14" r="2.192" stroke="#265BFF" stroke-width="1.5" style="animation:speaker-beat .5s linear infinite both;transform-origin:center center"/></svg>
-      </div>
-      <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
-        <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">جـایی کـه نـوآوری با تـجـربه خـرید بی‌درنـگ هـمراه است</h1>
-        <!--<p class="text-center text-xl text-gray-600 dark:text-gray-300">
-          Be part of millions people around the world using tailus in modern User Interfaces.
-        </p>--><br/>
-        <div class="flex flex-wrap justify-center gap-6">
-          <a
-              href="#"
-              class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-            >
-              <span class="relative text-base font-semibold text-white dark:text-dark"
-                >Get Started</span
-              >
-            </a>
-            <a
-              href="#"
-              class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
-            >
-              <span
-                class="relative text-base font-semibold text-primary dark:text-white"
-                >More about</span
-              >
-          </a>
-        </div>
-      </div>
-    </div>
+              <button class="profile_item bottom-8 -left-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
+      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] p-1">
+        <svg class="m-auto h-full w-full justify-center items-center inline-block"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#fa526a" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"/></g></g></svg>
+      </span>
+              </button>
+
+              <button class="profile_item bottom-8 -right-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
+      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2]  p-1">
+        <svg class="m-auto h-full w-full justify-center items-center inline-block"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#20c997" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z"/></g></g></svg>
+      </span>
+              </button>
+
+              <button class="profile_item right-[40%] -bottom-4 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
+      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2]  p-1">
+        <svg class="m-auto h-full w-full justify-center items-center inline-block"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#339af0" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"/></g></g></svg>
+      </span>
+              </button>
+
+              <button class="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
+                <div class="w-full bg-[] h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">
+              <span class="w-full h-full inline-block">
+                <svg class="m-auto h-full w-full justify-center items-center inline-block"
+                     width="170" height="160" viewBox="0 0 270 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M211.301 42.3662L180.705 24.7017C152.24 8.26749 117.17 8.26747 88.705 24.7017L58.1092 42.3662C29.6443 58.8004 12.1092 89.1721 12.1092 122.04V157.369C12.1092 190.238 29.6443 220.61 58.1092 237.044L88.705 254.708C117.17 271.143 152.24 271.143 180.705 254.708L211.301 237.044C239.766 220.61 257.301 190.238 257.301 157.37V122.041C257.301 89.1721 239.766 58.8004 211.301 42.3662Z" stroke="url(#paint0_linear_1046_3)" stroke-width="24"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_1046_3" x1="214.5" y1="12" x2="56" y2="267" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#C1D6DC"/>
+                  <stop offset="1" stop-color="#6E848D"/>
+                  </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+                </div>
+              </button>
+            </div>
+          </div>
   </Container>
 </div>
