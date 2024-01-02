@@ -6,5 +6,8 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
     site: "https://parscomtel.github.io",
-    base: "/parscomtel"
+    base: "/parscomtel",
+  customCss: [
+    './src/fonts/font-face.css',
+  ],
 });
