@@ -7,7 +7,7 @@ export default defineConfig({
   integrations: [tailwind()],
     site: "https://parscomtel.github.io",
     base: "/parscomtel",
-  customCss: [
-    './src/fonts/font-face.css',
-  ],
+    customCss: [
+      './src/fonts/font-face.css',
+    ],
 });

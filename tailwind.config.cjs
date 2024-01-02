@@ -361,6 +361,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      lalezar: 'lalezar',
       sans: [
         'ui-sans-serif',
         'system-ui',
