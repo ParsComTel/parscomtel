@@ -8,6 +8,6 @@ export default defineConfig({
     site: "https://parscomtel.github.io",
     base: "/parscomtel",
     customCss: [
-      './src/fonts/font-face.css',
+      './public/fonts/font-face.css',
     ],
 });
