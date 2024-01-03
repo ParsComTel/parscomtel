@@ -14,77 +14,281 @@ import Container from "./Container.astro"
         <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
           <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">جایی که نوآوری با تجربه خرید بی‌درنگ همراه است</h1>
           <br/>
-          <div class="flex flex-wrap justify-center gap-6">
-          </div>
-          <div class="relative h-full w-full flex items-center justify-center">
-            <div class="profileCard_container relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50">
-              <button class="profile_item left-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2]  p-1">
-        <svg viewBox="0 0 128 128">
-          <g fill="#61DAFB"><circle r="11.4" cy="64" cx="64"></circle><path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"></path></g>
-        </svg>
-      </span>
-              </button>
+            <style>
+                .card-border {
+                    z-index: 0;
+                    position: relative;
+                    padding: 1rem;
+                    width: 300px;
+                    height: 350px;
+                    box-sizing: border-box;
+                    background: transparent;
+                    backdrop-filter: blur(40px);
+                    border-radius: 0px 2rem;
+                    background-image: radial-gradient(#2121218a, #212121cc), linear-gradient(35deg,#124926 62%,#57ff94 100%);
+                    background-origin: border-box;
+                    background-clip: content-box, border-box;
+                    box-shadow: 1px 1px 3rem #57ff95;
+                    transition: all 0.5s;
+                    animation: pulse_3011 3s infinite;
+                }
 
-              <button class="profile_item right-[45px] -top-[4px] absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2]  p-1">
-        <svg viewBox="0 0 48 48" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z" fill="#00acc1"></path>
-        </svg>
-      </span>
-              </button>
+                .card-bg {
+                    position: relative;
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    border-radius: 0px 0.8rem;
+                    background: linear-gradient(346.80deg, #124926 30%, #165c30 30%, rgba(255, 70, 84, 0) 30%, rgba(255, 70, 84, 0) 32%, #124926 32%, #124926  35%, transparent 35%);
+                }
 
-              <button class="profile_item -left-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] p-1">
-        <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0" fill="#0acf83"></path><path d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0" fill="#a259ff"></path><path d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0" fill="#f24e1e"></path><path d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0" fill="#ff7262"></path><path d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0" fill="#1abcfe"></path></svg>
-      </span>
-              </button>
+                strong {
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-family: 'Open Sans Pro', sans-serif;
+                    font-size: 1.6rem;
+                    font-weight: 900;
+                    align-items: center;
+                    letter-spacing: 0.5rem;
+                }
 
-              <button class="profile_item -right-4 top-20 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] p-1">
-        <svg class="m-auto h-full w-full justify-center items-center inline-block"
-             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="90px" height="90px"><g fill="#313131" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M26.37,26l-8.795,-12.822l0.015,0.012l7.93,-9.19h-2.65l-6.46,7.48l-5.13,-7.48h-6.95l8.211,11.971l-0.001,-0.001l-8.66,10.03h2.65l7.182,-8.322l5.708,8.322zM10.23,6l12.34,18h-2.1l-12.35,-18z"/></g></g></svg>
-      </span>
-              </button>
+                #text-border {
+                    position: absolute;
+                    top: 15.35rem;
+                    left: 1.5rem;
+                    width: 100%;
+                    height: fit-content;
+                    color: transparent;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: rgb(255, 255, 255);
+                    background: linear-gradient(90deg,  transparent 100%, #ffffff  65%);
+                    background-size: cover;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                }
 
-              <button class="profile_item bottom-8 -left-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2] p-1">
-        <svg class="m-auto h-full w-full justify-center items-center inline-block"
-             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#fa526a" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"/></g></g></svg>
-      </span>
-              </button>
+                #text-ext {
+                    z-index: -1;
+                    display: flex;
+                    position: absolute;
+                    inset: 1rem;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: #ffffff;
+                    background: linear-gradient(346.80deg, rgb(255, 255, 255)  30%, #ffffff 30%, #ffffff 30%, rgb(255, 255, 255)  32%, rgb(255, 255, 255)  32%, rgb(255, 255, 255) 35%);
+                    background-size: cover;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding: 9rem 0 0 0.5rem;
+                }
 
-              <button class="profile_item bottom-8 -right-0 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2]  p-1">
-        <svg class="m-auto h-full w-full justify-center items-center inline-block"
-             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#20c997" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z"/></g></g></svg>
-      </span>
-              </button>
+                .marquee {
+                    top: 0;
+                    z-index: -5;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    overflow: hidden;
+                    --offset: 2rem;
+                    --move-initial: calc(-20% + var(--offset));
+                    --move-final: calc(-85% + var(--offset));
+                    border-radius: 0px 1rem;
+                    filter: opacity(0.3);
+                }
 
-              <button class="profile_item right-[40%] -bottom-4 absolute rounded-full bg-cover cursor-pointer border border-gray-400/50 p-[2px] active:scale-95 hover:scale-95 transition-all duration-500">
-      <span class="block w-[40px] h-[40px] transition-all duration-500 rounded-full z-[2]  p-1">
-        <svg class="m-auto h-full w-full justify-center items-center inline-block"
-             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#339af0" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"/></g></g></svg>
-      </span>
-              </button>
+                .marquee__inner {
+                    width: fit-content;
+                    display: flex;
+                    position: relative;
+                    transform: translate3d(var(--move-initial), 0, 0);
+                    animation: slide 60s linear infinite;
+                    border-radius: 0px 1rem;
+                }
 
-              <button class="profile_item w-[200px] h-[200px] p-1 border-2 rounded-full hover:border-gray-400/50 cursor-pointer transition-all duration-500 z-0">
-                <div class="w-full bg-[] h-full flex items-center justify-center p-2 rounded-full active:scale-95 hover:scale-95 object-cover transition-all duration-500">
-              <span class="w-full h-full inline-block">
-                <svg class="m-auto h-full w-full justify-center items-center inline-block"
-                     width="170" height="160" viewBox="0 0 270 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M211.301 42.3662L180.705 24.7017C152.24 8.26749 117.17 8.26747 88.705 24.7017L58.1092 42.3662C29.6443 58.8004 12.1092 89.1721 12.1092 122.04V157.369C12.1092 190.238 29.6443 220.61 58.1092 237.044L88.705 254.708C117.17 271.143 152.24 271.143 180.705 254.708L211.301 237.044C239.766 220.61 257.301 190.238 257.301 157.37V122.041C257.301 89.1721 239.766 58.8004 211.301 42.3662Z" stroke="url(#paint0_linear_1046_3)" stroke-width="24"/>
-                  <defs>
-                  <linearGradient id="paint0_linear_1046_3" x1="214.5" y1="12" x2="56" y2="267" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#C1D6DC"/>
-                  <stop offset="1" stop-color="#6E848D"/>
-                  </linearGradient>
-                  </defs>
-                </svg>
-              </span>
+                .marquee__inner {
+                    animation-play-state: running;
+                }
+
+                #blur-area {
+                    display: block;
+                    position: absolute;
+                    z-index: -1;
+                    inset: 0;
+                    /* border: 1px solid rgb(12, 255, 65); */
+                    border-radius: 0 1rem;
+                    backdrop-filter: blur(3px);
+                    background: linear-gradient(90deg, transparent  0%, #00000044 100%);
+                }
+
+                .viper {
+                    display: flex;
+                    text-transform: uppercase;
+                    font-family: 'Open Sans Pro', sans-serif;
+                    font-size: 8rem;
+                    font-weight: 900;
+                    align-items: center;
+                    line-height: 0.9em;
+                    color: transparent;
+                    -webkit-text-stroke-width: 2px;
+                    -webkit-text-stroke-color: rgb(255, 255, 255);
+                }
+
+                .container-logo {
+                    display: flex;
+                    position: absolute;
+                    width: 3.5rem;
+                    height: 3em;
+                    top: 1rem;
+                    left: 1rem;
+                    align-items: center;
+                    justify-content: center;
+                    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                }
+
+                .logo {
+                    position: absolute;
+                    width: 200%;
+                    height: 200%;
+                    background: conic-gradient(#228647 0%, #fff 10%, #7bffac 25%, #0d381c 50%, #1ccc5d 70%, #69b384 90%);
+                    animation: spin 5s linear infinite;
+                }
+
+                .logo-inside {
+                    display: flex;
+                    width: 85%;
+                    height: 85%;
+                    align-items: center;
+                    justify-content: center;
+                    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                    background-color: #212121;
+                }
+
+                .first, .second {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #57ff95;
+                }
+
+                .first {
+                    clip-path: polygon(0 10%, 70% 90%, 35% 90%, 0 50%);
+                }
+
+                .second {
+                    clip-path: polygon(100% 10%, 100% 50%, 88% 65%, 55% 65%);
+                }
+
+                .mist-container {
+                    position: absolute;
+                    width: 450px;
+                    height: 150px;
+                    overflow: hidden;
+                    filter: blur(1rem);
+                    top: 60%;
+                    left: 0;
+                }
+
+                .mist {
+                    width: 100%;
+                    height: 100%;
+                    background: radial-gradient(circle, rgba(131, 255, 158, 0.63) 10%, rgba(255, 255, 255, 0) 50%);
+                    animation: mist 10s infinite both;
+                }
+
+                svg {
+                    position: absolute;
+                    top: 0%;
+                    width: 18rem;
+                    height: 100%;
+                    z-index: -2;
+                }
+
+                .card-border:hover {
+                    transform: rotateY(20deg);
+                }
+
+                @keyframes spin {
+                    from {
+                        transform: rotate(0deg);
+                    }
+
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                @keyframes mist {
+                    0% {
+                        transform: translateX(-50%) translateY(0%) scaleY(0.7) rotate(0deg);
+                        opacity: 0.3;
+                    }
+
+                    50% {
+                        transform: translateX(0%) translateY(50%) scaleY(-10.3) rotate(20deg);
+                        opacity: 0.5;
+                    }
+
+                    100% {
+                        transform: translateX(-50%) translateY(0%) scaleY(0.7) rotate(-20deg);
+                        opacity: 0.3;
+                    }
+                }
+
+                @keyframes pulse_3011 {
+                    0% {
+                        box-shadow: 0 0 1rem #57ff95;
+                    }
+
+                    70% {
+                        box-shadow: 0 0 2rem #57ff95;
+                    }
+
+                    100% {
+                        box-shadow: 0 0 1rem #57ff95;
+                    }
+                }
+
+                @keyframes slide {
+                    0% {
+                        transform: translate3d(var(--move-initial), 0, 0);
+                    }
+
+                    100% {
+                        transform: translate3d(var(--move-final), 0, 0);
+                    }
+                }
+            </style>
+            <div class="card-border m-auto relative h-full w-full flex items-center justify-center" dir="ltr">
+                <div class="card-bg">
+                    <div class="container-logo">
+                        <div class="logo"></div>
+                        <div class="logo-inside">
+                            <img src="../../../public/favicon.svg" class="m-auto w-8"/>
+                            <!--<div class="first"></div>
+                            <div class="second"></div>-->
+                        </div>
+                    </div>
+                    <div id="blur-area"></div>
+                    <div class="marquee">
+                        <div class="marquee__inner" aria-hidden="true">
+                            <span class="viper">viper viper viper viper</span>
+                            <span class="viper">viper viper viper viper</span>
+                            <span class="viper">viper viper viper viper</span>
+                        </div>
+                    </div>
+
                 </div>
-              </button>
+                <div class="mist-container">
+                    <div class="mist"></div>
+                </div>
+                <strong id="text-ext">Hermes</strong>
+                <strong id="text-border">Hermes</strong>
             </div>
-          </div>
+        </div>
+      </div>
+    </div>
   </Container>
 </div>
